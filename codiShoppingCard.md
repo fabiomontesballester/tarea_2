@@ -1,31 +1,24 @@
-## Resumen sobre GitLab
+# codiShoppingCard.md: Pull Request
 
-**GitLab** es una plataforma integral de **DevSecOps** que permite gestionar todo el ciclo de vida del software en un único lugar, desde la planificación y el desarrollo hasta la seguridad, pruebas e implementación. :contentReference[oaicite:0]{index=0}
+Una Pull Request (PR) és una sol·licitud en plataformes com GitHub o GitLab per proposar canvis en un repositori, permetent que altres desenvolupadors els revisin abans d'integrar-los a la branca principal com "main" o "master" [web:1].
 
-### ¿Qué es GitLab?
+## Què és una Pull Request?
+- Una Pull Request crea una proposta de fusió des d'una branca secundària cap a la principal, on el propietari del repositori decideix si acceptar-la [web:1][web:9].
+- Serveix per col·laborar en equips, especialment en projectes oberts, on un contribuidor fa un "fork" del repositori, implementa canvis i sol·licita la seva inclusió [web:3].
+- El procés inclou crear una branca (`git checkout -b nova-rama`), fer commits (`git commit -am 'missatge'`), pujar-la (`git push origin nova-rama`) i obrir la PR des de la interfície web [web:1].
 
-- Es una plataforma que combina herramientas de **control de versiones (Git)**, **integración continua/entrega continua (CI/CD)**, **seguridad integrada** y **colaboración en equipo**. :contentReference[oaicite:1]{index=1}  
-- Está diseñada para mejorar la eficiencia del desarrollo de software y permitir que los equipos desplieguen cambios más rápido, seguro y de forma colaborativa. :contentReference[oaicite:2]{index=2}
+## Avantatges
+- Millora la qualitat del codi mitjançant revisions per pares (peer review), detectant errors abans de la fusió [web:1][web:8].
+- Fomenta la col·laboració i el feedback, generant diferents punts de vista i augmentant la cohesió de l'equip [web:8].
+- Permet un procés ordenat d'integració i proves automàtiques abans del merge [web:6][web:10].
 
-### Historia y misión
+## Desavantatges
+- Pot causar retards en entorns àgils, ja que les branques llargues augmenten conflictes de fusió (merge conflicts) [web:12].
+- Les PR grans són difícils de revisar, allunyant-se de pràctiques àgils com revisions ràpides i petites [web:6][web:10].
+- Requereix temps addicional per revisions i possibles canvis iteratius [web:14].
 
-- GitLab nació en 2011 como un proyecto de código abierto para facilitar la colaboración entre programadores. :contentReference[oaicite:3]{index=3}  
-- Su **misión** es permitir que cualquier persona contribuya y cree software que impulse al mundo. :contentReference[oaicite:4]{index=4}
-
-### Características principales
-
-- **DevSecOps unificado**: integra desarrollo, seguridad y operaciones en un flujo continuo. :contentReference[oaicite:5]{index=5}  
-- **Automatización con IA**: funciones como sugerencias de código y chat de IA para acelerar tareas. :contentReference[oaicite:6]{index=6}  
-- **Gestión de proyectos y código**: control de versiones, seguimiento de incidencias, revisión de merge/pull requests, etc. :contentReference[oaicite:7]{index=7}
-
-### Datos clave
-
-- Más de **50 millones de usuarios registrados**. :contentReference[oaicite:8]{index=8}  
-- Miles de contribuyentes y equipo distribuido en decenas de países. :contentReference[oaicite:9]{index=9}
-
-### Beneficios de usar GitLab
-
-- Reducción del tiempo en tareas repetitivas y de mantenimiento.
-- Flujo de trabajo consistente que mejora la calidad del software.
-- Seguridad integrada sin necesidad de herramientas adicionales.
+## Bones Pràctiques
+- Mantingues les PR petites i enfocades en una sola tasca per facilitar revisions ràpides [web:6][web:10].
+- Inclou descripcions clares, proves que passen i sense warnings del compilador [web:10].
+- Executa tests locals i assegura't que el codi funcioni abans d'obrir la PR [web:10].
 
